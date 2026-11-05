@@ -1,5 +1,6 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+
 class Settings(BaseSettings):
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str
@@ -14,5 +15,6 @@ class Settings(BaseSettings):
             f"@{self.POSTGRES_HOST}:{self.POSTGRES_PORT}/{self.POSTGRES_DB}"
         )
     
-    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
-    
+    model_config = SettingsConfigDict(env_file="..\\..\\.env", extra="ignore")
+
+settings = Settings()
