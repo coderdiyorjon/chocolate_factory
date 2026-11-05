@@ -1,4 +1,6 @@
-# Database
+# Chocolate Factory
+
+## Database
 
 ```mermaid
 erDiagram
@@ -34,6 +36,6 @@ erDiagram
 
 [Visit db.diagram schema](https://dbdiagram.io/d/chocolate_factory-6aec0f8ff1d298b57370686d)
 
-# DB Picture
+## DB Picture
 
 <img src='chocolate_factory.png' alt="db.diagram schema" widt=300>
