@@ -35,7 +35,7 @@ async def seed_data(session: AsyncSession) -> None:
     sugar = Inventory(
         name="Sugar",
         item_type=ItemType.RAW_MATERIAL,
-        stock=500,
+        stock=200,
         unit='g',
     )
     dark_chocolate = Inventory(
@@ -57,7 +57,7 @@ async def seed_data(session: AsyncSession) -> None:
     recipe_sugar = Recipe(
         product_id=dark_chocolate.id,
         material_id=sugar.id,
-        required_quantity=50,
+        required_quantity=20,
     )
     session.add_all([recipe_cocoa, recipe_sugar])
     await session.commit()
