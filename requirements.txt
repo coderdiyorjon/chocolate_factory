@@ -3,6 +3,6 @@ uvicorn
 sqlalchemy
 setuptools
 wheel
-asyncopg
+asyncpg
 pydantic-settings
 isort
