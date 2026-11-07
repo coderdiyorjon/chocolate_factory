@@ -27,6 +27,8 @@ class Inventory(Base):
     __table_args__ = (
         CheckConstraint("stock >= 0", name="check_stock_is_positive"),
     )
+    # Fetch server-generated updated_at via RETURNING so it is never lazy-loaded in async code.
+    __mapper_args__ = {"eager_defaults": True}
 
 
 class Recipe(Base):

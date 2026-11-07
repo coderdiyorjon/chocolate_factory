@@ -32,7 +32,7 @@ class ProduceRequest(BaseModel):
 class ProductionLogResponse(BaseModel):
     id: int
     product_id: int
-    quantity_produces: int
+    quantity_produced: int
     created_at: datetime
     
     model_config = ConfigDict(from_attributes=True)

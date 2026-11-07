@@ -1,8 +1,5 @@
 fastapi
 uvicorn
 sqlalchemy
-setuptools
-wheel
 asyncpg
 pydantic-settings
-isort
